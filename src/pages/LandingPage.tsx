@@ -7,18 +7,13 @@ import { Footer } from '../components/Footer';
 import Header from '../components/Header';
 import { produtosMock } from '../core/products.mock';
 import { config } from '../core/config';
-import { useMemo, useEffect } from 'react';
+import { useMemo } from 'react';
 import LogoTransparente from '../assets/Logo com fundo transparente.png';
 
 
 export default function LandingPage() {
   // Produtos em destaque baseado nos IDs configurados
-  const produtosDestaque = useMemo(() => {
-    return produtosMock.map(produto => ({
-      ...produto,
-      destaque: config.productosDestaque.includes(produto.id)
-    }));
-  }, [produtosMock]);
+  
 
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
