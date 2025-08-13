@@ -6,6 +6,7 @@ import { produtosMock } from '../core/products.mock';
 import { config } from '../core/config';
 import Header from '../components/Header';
 
+
 export default function LandingPage() {
   // Produtos em destaque baseado nos IDs configurados
   const produtosDestaque = useMemo(() => {
