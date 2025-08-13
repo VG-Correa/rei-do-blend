@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LogoTransparente from '../assets/Logo com fundo transparente.png';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,10 +13,14 @@ const Header: React.FC = () => {
     <header className="bg-[#320000] fixed w-full top-0 left-0 z-50 shadow-xl border-b border-[#2a0000]">
       <div className="container mx-auto flex justify-between items-center px-4 py-2 md:py-3">
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 bg-gradient-to-br from-amarelo-claro to-amarelo-escuro rounded-full flex items-center justify-center shadow-lg">
-            <span className="font-bold text-[#320000] text-xl">R</span>
+          <div className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full p-1.5 shadow-lg backdrop-blur-sm">
+            <img 
+              src={LogoTransparente} 
+              alt="Rei do Blend Logo" 
+              className="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.7)] drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]" 
+            />
           </div>
-          <span className="text-2xl font-extrabold text-white tracking-tight drop-shadow">Rei do Blend</span>
+          <span className="text-2xl font-extrabold text-white tracking-tight drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">Rei do Blend</span>
         </div>
 
         {/* Botão hamburguer só em telas pequenas */}
