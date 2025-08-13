@@ -1,28 +1,30 @@
 import React from 'react';
+import { MessageCircle } from 'lucide-react';
 
-const WhatsappButton: React.FC = () => {
+interface WhatsappButtonProps {
+  text?: string;
+  className?: string;
+  bgColor?: string;
+  textColor?: string;
+  iconColor?: string;
+}
+
+const WhatsappButton: React.FC<WhatsappButtonProps> = ({ 
+  text = "Entre em contato agora", 
+  className = "",
+  bgColor = "bg-green-500 hover:bg-green-600",
+  textColor = "text-white",
+  iconColor = "text-white"
+}) => {
   return (
     <a
-      href="https://wa.me/SEUNUMEROAQUI"
+      href="https://wa.me/5512988457268?text=Olá! Gostaria de fazer um orçamento."
       target="_blank"
       rel="noopener noreferrer"
-      style={{
-        position: 'fixed',
-        bottom: 24,
-        right: 24,
-        zIndex: 1000,
-        background: '#25D366',
-        borderRadius: '50%',
-        width: 56,
-        height: 56,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.2)'
-      }}
-      aria-label="Fale conosco no WhatsApp"
+      className={`group flex items-center gap-2 ${bgColor} ${textColor} px-6 py-3 rounded-full font-bold transition-all transform hover:scale-105 shadow-xl ${className}`}
     >
-      <span style={{fontSize: 32, color: 'white'}}>💬</span>
+      <MessageCircle className={`w-5 h-5 ${iconColor}`} />
+      {text}
     </a>
   );
 };

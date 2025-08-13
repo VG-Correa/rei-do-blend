@@ -99,7 +99,7 @@ export const FormularioOrcamento = () => {
 
         <button 
           type="submit"
-          className="w-full bg-gradient-to-r from-red-800 to-red-900 text-white py-4 rounded-lg font-bold text-lg hover:from-red-700 hover:to-red-800 transition-all transform hover:scale-105 shadow-lg"
+          className="w-full bg-gradient-to-r from-yellow-400 to-amber-500 text-red-900 py-4 rounded-lg font-bold text-lg hover:from-red-800 hover:to-red-900 hover:text-yellow-400 transition-all transform hover:scale-105 shadow-lg"
         >
           Enviar Solicitação de Orçamento
         </button>

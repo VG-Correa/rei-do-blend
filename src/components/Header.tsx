@@ -34,23 +34,23 @@ const Header: React.FC = () => {
 
         {/* Menu Desktop */}
         <nav className="hidden md:flex md:items-center md:gap-6">
-          <button onClick={() => scrollToSection('inicio')} className="py-2 px-4 font-semibold text-amarelo-claro hover:text-white hover:bg-[#4B0000] rounded-lg transition-all duration-200 hover:scale-105">Início</button>
-          <button onClick={() => scrollToSection('sobre')} className="py-2 px-4 font-semibold text-amarelo-claro hover:text-white hover:bg-[#4B0000] rounded-lg transition-all duration-200 hover:scale-105">Sobre</button>
-          <button onClick={() => scrollToSection('produtos')} className="py-2 px-4 font-semibold text-amarelo-claro hover:text-white hover:bg-[#4B0000] rounded-lg transition-all duration-200 hover:scale-105">Produtos</button>
-          <button onClick={() => scrollToSection('processo')} className="py-2 px-4 font-semibold text-amarelo-claro hover:text-white hover:bg-[#4B0000] rounded-lg transition-all duration-200 hover:scale-105">Processo</button>
-          <button onClick={() => scrollToSection('depoimentos')} className="py-2 px-4 font-semibold text-amarelo-claro hover:text-white hover:bg-[#4B0000] rounded-lg transition-all duration-200 hover:scale-105">Depoimentos</button>
-          <button onClick={() => scrollToSection('contato')} className="py-2 px-6 font-bold text-[#320000] bg-gradient-to-r from-amarelo-claro to-amarelo-escuro rounded-full hover:from-amarelo-hover hover:to-amarelo-escuro hover:text-white transition-all duration-200 hover:scale-105 shadow-lg border-2 border-amarelo-claro">Contato</button>
+          <button onClick={() => scrollToSection('inicio')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Início</button>
+          <button onClick={() => scrollToSection('sobre')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Sobre</button>
+          <button onClick={() => scrollToSection('produtos')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Produtos</button>
+          <button onClick={() => scrollToSection('processo')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Processo</button>
+          <button onClick={() => scrollToSection('depoimentos')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Depoimentos</button>
+          <button onClick={() => scrollToSection('contato')} className="flex items-center justify-center py-2 px-6 font-bold text-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-yellow-400 hover:text-red-900 transition-all duration-200">Contato</button>
         </nav>
 
         {/* Menu Mobile */}
         {isOpen && (
           <nav className="absolute top-full left-0 w-full bg-[#320000] p-4 flex flex-col gap-2 shadow-xl border-b border-[#2a0000] md:hidden animate-fade-in">
-            <button onClick={() => scrollToSection('inicio')} className="py-2 px-4 font-semibold text-amarelo-claro hover:text-white hover:bg-[#4B0000] rounded-lg transition-all duration-200">Início</button>
-            <button onClick={() => scrollToSection('sobre')} className="py-2 px-4 font-semibold text-amarelo-claro hover:text-white hover:bg-[#4B0000] rounded-lg transition-all duration-200">Sobre</button>
-            <button onClick={() => scrollToSection('produtos')} className="py-2 px-4 font-semibold text-amarelo-claro hover:text-white hover:bg-[#4B0000] rounded-lg transition-all duration-200">Produtos</button>
-            <button onClick={() => scrollToSection('processo')} className="py-2 px-4 font-semibold text-amarelo-claro hover:text-white hover:bg-[#4B0000] rounded-lg transition-all duration-200">Processo</button>
-            <button onClick={() => scrollToSection('depoimentos')} className="py-2 px-4 font-semibold text-amarelo-claro hover:text-white hover:bg-[#4B0000] rounded-lg transition-all duration-200">Depoimentos</button>
-            <button onClick={() => scrollToSection('contato')} className="py-2 px-6 font-bold text-[#320000] bg-gradient-to-r from-amarelo-claro to-amarelo-escuro rounded-full hover:from-amarelo-hover hover:to-amarelo-escuro hover:text-white transition-all duration-200 shadow-lg border-2 border-amarelo-claro">Contato</button>
+            <button onClick={() => scrollToSection('inicio')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Início</button>
+            <button onClick={() => scrollToSection('sobre')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Sobre</button>
+            <button onClick={() => scrollToSection('produtos')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Produtos</button>
+            <button onClick={() => scrollToSection('processo')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Processo</button>
+            <button onClick={() => scrollToSection('depoimentos')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Depoimentos</button>
+            <button onClick={() => scrollToSection('contato')} className="flex items-center justify-center py-2 px-6 font-bold text-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-yellow-400 hover:text-red-900 transition-all duration-200">Contato</button>
           </nav>
         )}
       </div>

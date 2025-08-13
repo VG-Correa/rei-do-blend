@@ -1,8 +1,7 @@
 import { ChevronDown, Users, Award, ArrowRight, Check } from 'lucide-react';
-import { ParceirosSection } from '../components/ParceirosSection';
 import { ProdutosSection } from '../components/ProdutosSection';
-import { BotaoContato } from '../components/BotaoContato';
 import { FormularioOrcamento } from '../components/FormularioOrcamento';
+import WhatsappButton from '../components/WhatsappButton';
 import { Footer } from '../components/Footer';
 import Header from '../components/Header';
 import LogoTransparente from '../assets/Logo com fundo transparente.png';
@@ -32,7 +31,7 @@ export default function LandingPage() {
         <div className="w-full px-2 sm:px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             {/* Logo animado */}
-            <div className="mb-4 md:mb-8 transform transition-all duration-1000 hover:scale-110">
+            <div className="mb-20 md:mb-20 transform transition-all duration-1000 hover:scale-210">
               <div className="w-36 h-36 sm:w-44 sm:h-44 md:w-56 md:h-56 mx-auto flex items-center justify-center mb-4 md:mb-6">
                 <img src={LogoTransparente} alt="Rei do Blend Logo" className="w-full h-full object-contain drop-shadow-lg" />
               </div>
@@ -59,7 +58,12 @@ export default function LandingPage() {
                 Ver Catálogo Premium
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={16} />
               </button>
-              <BotaoContato />
+              <WhatsappButton 
+                text="Fale com um Especialista"
+                bgColor="bg-amber-500 hover:bg-amber-400"
+                textColor="text-red-900"
+                iconColor="text-red-900"
+              />
             </div>
 
             {/* Stats */}
@@ -234,7 +238,7 @@ export default function LandingPage() {
       </section>
 
       {/* Parceiros Section */}
-      <ParceirosSection />
+      {/* <ParceirosSection /> */}
       
       {/* CTA Section */}
       <section className="py-8 sm:py-10 md:py-14 bg-gradient-to-br from-yellow-400 to-amber-500">
@@ -253,12 +257,15 @@ export default function LandingPage() {
             >
               Ver Produtos
             </button>
+            <WhatsappButton 
+              text="Entre em contato agora"
+              bgColor="bg-red-900 hover:bg-red-800"
+              textColor="text-yellow-400"
+              iconColor="text-yellow-400"
+            />
           </div>
         </div>
       </section>
-      <div className='mb-2 mt-2 flex flex-col p-5'>
-            <BotaoContato />
-      </div>
 
       {/* Contato Section */}
             <section id="contato" className="py-8 md:py-14 bg-gradient-to-br from-slate-900 to-slate-800 text-center">
