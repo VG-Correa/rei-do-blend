@@ -1,4 +1,5 @@
 import { GoogleMap } from './GoogleMap';
+import LogoTransparente from '../assets/Logo com fundo transparente.png';
 
 export const Footer = () => {
   return (
@@ -7,8 +8,12 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-full flex items-center justify-center shadow-lg">
-                <span className="font-bold text-red-900 text-xl">R</span>
+              <div className="w-12 h-12 flex items-center justify-center shadow-lg rounded-full overflow-hidden">
+                <img 
+                  src={LogoTransparente} 
+                  alt="Rei do Blend Logo" 
+                  className="w-full h-full object-contain filter brightness-125"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white">Rei do Blend</h3>
