@@ -18,7 +18,7 @@ export default function LandingPage() {
   return (
     <>
     <Header />
-    <div className="min-h-screen bg-gradient-to-br from-red-900 via-red-800 to-red-900 pt-[60px] md:pt-[68px] w-screen overflow-x-clip">
+    <div className="min-h-screen bg-gradient-to-br from-red-900 via-red-800 to-red-900 pt-[60px] md:pt-[68px] w-full">
 
       {/* Hero Section */}
       <section id="inicio" className="min-h-screen relative overflow-x-hidden flex items-center pb-8">
