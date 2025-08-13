@@ -51,15 +51,8 @@ export default function LandingPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 md:mb-12 px-2">
-              <button 
-                onClick={() => scrollToSection('produtos')}
-                className="group bg-gradient-to-r from-yellow-400 to-amber-500 text-red-900 px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full font-bold text-sm sm:text-base md:text-lg hover:from-yellow-300 hover:to-amber-400 transition-all transform hover:scale-105 shadow-2xl flex items-center justify-center"
-              >
-                Ver Catálogo Premium
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={16} />
-              </button>
               <WhatsappButton 
-                text="Fale com um Especialista"
+                text="Fale com nossa equipe"
                 bgColor="bg-amber-500 hover:bg-amber-400"
                 textColor="text-red-900"
                 iconColor="text-red-900"
