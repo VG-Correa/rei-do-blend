@@ -5,9 +5,6 @@ import { BotaoContato } from '../components/BotaoContato';
 import { FormularioOrcamento } from '../components/FormularioOrcamento';
 import { Footer } from '../components/Footer';
 import Header from '../components/Header';
-import { produtosMock } from '../core/products.mock';
-import { config } from '../core/config';
-import { useMemo } from 'react';
 import LogoTransparente from '../assets/Logo com fundo transparente.png';
 
 
