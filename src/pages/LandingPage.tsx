@@ -1,22 +1,34 @@
-import { ChevronDown, Users, Award, ArrowRight, Check } from 'lucide-react';
+import { ChevronDown, Users, Award, Check } from 'lucide-react';
 import { ProdutosSection } from '../components/ProdutosSection';
 import { FormularioOrcamento } from '../components/FormularioOrcamento';
 import WhatsappButton from '../components/WhatsappButton';
 import { Footer } from '../components/Footer';
 import Header from '../components/Header';
 import LogoTransparente from '../assets/Logo com fundo transparente.png';
+import { Head } from '../components/SEO/Head';
+import { organizationSchema, localBusinessSchema } from '../schemas';
+import { logPageView, logButtonClick } from '../services/analytics';
+import { useEffect } from 'react';
 
 
 export default function LandingPage() {
-  // Produtos em destaque baseado nos IDs configurados
-  
+  useEffect(() => {
+    logPageView('/');
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    logButtonClick('Navigation', sectionId);
   };
+
 
   return (
     <>
+    <Head 
+      title="Rei do Blend - Hambúrgueres Artesanais Premium | São José dos Campos"
+      description="Blends premium para hambúrgueres artesanais. Mais de 500 clientes satisfeitos e 15 anos de tradição em São José dos Campos. Transforme seu negócio com hambúrgueres que fazem seus clientes voltarem sempre."
+      schema={[organizationSchema, localBusinessSchema]}
+    />
     <Header />
     <div className="min-h-screen bg-gradient-to-br from-red-900 via-red-800 to-red-900 pt-[60px] md:pt-[68px] w-full">
 

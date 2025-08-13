@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.reidoblend.com.br/sitemap.xml
+
+# Desabilitar rastreamento de parâmetros de UTM
+Disallow: /*?utm_*
+Disallow: /*&utm_*
+
+# Bloquear páginas de desenvolvimento/teste
+Disallow: /dev/
+Disallow: /test/
+Disallow: /staging/
