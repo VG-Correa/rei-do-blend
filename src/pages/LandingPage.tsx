@@ -107,7 +107,7 @@ export default function LandingPage() {
               <h2 className="text-4xl md:text-5xl font-bold text-red-900 mb-6">
                 Nossa História
               </h2>
-              <p className="text-xl opacity-80 max-w-3xl mx-auto">
+              <p className="text-xl text-black-900 opacity-80 max-w-3xl mx-auto">
                 Uma tradição familiar que começou na cozinha e se tornou referência no mercado
               </p>
             </div>
@@ -324,7 +324,7 @@ export default function LandingPage() {
             >
               Solicitar Orçamento Agora
             </button>
-            <button className="border-2 border-red-900 text-red-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-red-900 hover:text-white transition-all">
+            <button className="border-2 border-red-900 text-white-900 px-8 py-4 rounded-full font-bold text-lg transition-all">
               (11) 9999-9999
             </button>
           </div>
@@ -411,15 +411,15 @@ export default function LandingPage() {
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                       <label className="flex items-center">
                         <input type="checkbox" className="text-red-600 rounded focus:ring-red-500" />
-                        <span className="ml-2 text-sm">Blend Premium</span>
+                        <span className="ml-2 text-black-900 text-sm">Blend Premium</span>
                       </label>
                       <label className="flex items-center">
                         <input type="checkbox" className="text-red-600 rounded focus:ring-red-500" />
-                        <span className="ml-2 text-sm">Blend Tradicional</span>
+                        <span className="ml-2 text-black-900 text-sm">Blend Tradicional</span>
                       </label>
                       <label className="flex items-center">
                         <input type="checkbox" className="text-red-600 rounded focus:ring-red-500" />
-                        <span className="ml-2 text-sm">Blend Gourmet</span>
+                        <span className="ml-2 text-black-900 text-sm">Blend Gourmet</span>
                       </label>
                     </div>
                   </div>
