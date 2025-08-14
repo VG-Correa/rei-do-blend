@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 
 interface SEOProps {
@@ -18,7 +17,7 @@ export const Head: React.FC<SEOProps> = ({
   const canonical = `https://www.reidoblend.com.br${location.pathname}`;
 
   return (
-    <Helmet>
+    <>
       {/* Básico */}
       <title>{title}</title>
       <meta name="description" content={description} />
@@ -54,6 +53,6 @@ export const Head: React.FC<SEOProps> = ({
           {JSON.stringify(schema)}
         </script>
       )}
-    </Helmet>
+    </>
   );
 };
