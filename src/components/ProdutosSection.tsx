@@ -3,11 +3,11 @@ import { categoriasMock, produtosMock } from '../core/products.mock';
 
 export const ProdutosSection = () => {
   return (
-    <section id="produtos" className="py-10 md:py-14 bg-gradient-to-br from-red-900 to-red-800">
+    <section id="produtos" className="py-10 md:py-14 bg-gradient-to-br from-[hsl(359,69%,30%)] to-red-800">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-8 md:mb-10">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Nossos Produtos
+            PRODUTOS
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
             Cada blend é cuidadosamente desenvolvido para maximizar seu lucro e satisfação dos clientes

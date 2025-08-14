@@ -21,9 +21,9 @@ const WhatsappButton: React.FC<WhatsappButtonProps> = ({
       href="https://wa.me/5512988457268?text=Olá! Gostaria de fazer um orçamento."
       target="_blank"
       rel="noopener noreferrer"
-      className={`group flex items-center gap-2 ${bgColor} ${textColor} px-6 py-3 rounded-full font-bold transition-all transform hover:scale-105 shadow-xl ${className}`}
+      className={`justify-center group flex items-center gap-2 ${bgColor} ${textColor} px-6 py-3 rounded-full font-bold transition-all transform hover:scale-105 shadow-xl ${className}`}
     >
-      <MessageCircle className={`w-5 h-5 ${iconColor}`} />
+      <MessageCircle className={`text-center w-5 h-5 ${iconColor}`} />
       {text}
     </a>
   );

@@ -72,7 +72,7 @@ export const FormularioOrcamento = () => {
 
         <div>
           <label className="block text-gray-700 font-semibold mb-2">Produtos de Interesse</label>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="flex flex-col justify-center items-center">
             <label className="flex items-center">
               <input type="checkbox" className="text-red-600 rounded focus:ring-red-500" />
               <span className="ml-2 text-black text-sm">Blend Premium</span>

@@ -1,35 +1,19 @@
-import type { Organization, Product, LocalBusiness } from 'schema-dts';
-
-export const organizationSchema: Organization = {
+export const organizationSchema = {
   "@type": "Organization",
+  "@context": "https://schema.org",
   name: "Rei do Blend",
   description: "Especialistas em blends premium para hambúrgueres artesanais",
   url: "https://www.reidoblend.com.br",
   logo: "https://www.reidoblend.com.br/logo-rei-blend.jpg",
-  foundingDate: "2010",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Av. Ouro Fino, 896",
-    addressLocality: "São José dos Campos",
-    addressRegion: "SP",
-    postalCode: "12233-401",
-    addressCountry: "BR"
-  },
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+55-12-98845-7268",
-    contactType: "customer service",
-    areaServed: "BR",
-    availableLanguage: "Portuguese"
-  },
   sameAs: [
     "https://www.instagram.com/reidoblend",
     "https://www.facebook.com/reidoblend"
   ]
 };
 
-export const productSchema: Product = {
+export const productSchema = {
   "@type": "Product",
+  "@context": "https://schema.org",
   name: "Blend Premium Rei do Blend",
   brand: {
     "@type": "Brand",
@@ -49,7 +33,7 @@ export const productSchema: Product = {
   }
 };
 
-export const localBusinessSchema: LocalBusiness = {
+export const localBusinessSchema = {
   "@type": "FoodEstablishment",
   name: "Rei do Blend",
   priceRange: "$$",
