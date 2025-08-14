@@ -17,11 +17,11 @@ export const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white">Rei do Blend</h3>
-                <p className="text-gray-400 text-sm">Pai e Filho - desde 2010</p>
+                <p className="text-gray-400 text-sm">Pai e Filho</p>
               </div>
             </div>
             
-            <div className="space-y-4 text-gray-400">
+            <div className="text-gray-400 text-justify">
               <p className="flex items-center gap-2">
                 <span>📍</span>
                 Av. Ouro Fino, 896 - Bosque dos Eucaliptos, São José dos Campos / SP
@@ -44,6 +44,7 @@ export const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-gray-400 text-sm">
           <p>&copy; 2025 Rei do Blend - Todos os direitos reservados</p>
+          <p>Site by: solucoes.pec.dev@gmail.com</p>
         </div>
       </div>
     </footer>

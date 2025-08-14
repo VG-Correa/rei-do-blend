@@ -5,25 +5,27 @@ import type { Produto, Categoria } from '../core/products.mock';
 interface CategoriaAccordionProps {
   categoria: Categoria;
   produtos: Produto[];
+  btnColor: string;
+  btnTextColor: string;
 }
 
-export const CategoriaAccordion = ({ categoria, produtos }: CategoriaAccordionProps) => {
+export const CategoriaAccordion = ({ categoria, produtos, btnColor="bg-gradient-to-r from-red-800 to-red-900", btnTextColor= "text-white/80" }: CategoriaAccordionProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="mb-6">
+    <div className={"mb-6 " + btnColor}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full bg-gradient-to-r from-red-800 to-red-900 p-4 rounded-xl flex items-center justify-between text-white hover:from-red-700 hover:to-red-800 transition-all"
+        className={"w-full p-4 rounded-xl flex items-center justify-between transition-all " + btnTextColor}
       >
         <div>
-          <h3 className="text-xl font-bold text-left">{categoria.nome}</h3>
-          <p className="text-sm text-left text-white/80">{categoria.descricao}</p>
+          <h3 className={"text-xl font-bold text-left " + btnTextColor}>{categoria.nome}</h3>
+          <p className={"text-sm text-left" + btnTextColor}>{categoria.descricao}</p>
         </div>
         {isOpen ? (
-          <ChevronUp size={24} className="text-white/80" />
+          <ChevronUp size={24} className={btnTextColor} />
         ) : (
-          <ChevronDown size={24} className="text-white/80" />
+          <ChevronDown size={24} className={btnTextColor} />
         )}
       </button>
 

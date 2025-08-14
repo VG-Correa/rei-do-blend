@@ -18,7 +18,7 @@ export type Produto = {
 export const categoriasMock: Categoria[] = [
   {
     id: '1',
-    nome: 'Hambúrgueres Bovinos',
+    nome: 'Hambúrgueres',
     descricao: 'Blends premium de carne bovina'
   },
   {

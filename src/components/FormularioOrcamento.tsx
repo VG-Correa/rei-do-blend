@@ -73,7 +73,7 @@ export const FormularioOrcamento = () => {
           <textarea 
             rows={4} 
             className="text-gray-800 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all resize-none"
-            placeholder="Conte-nos mais sobre seu negócio e suas necessidades..."
+            placeholder="Conte-nos mais sobre seu negócio e suas necessidades."
           ></textarea>
         </div>
 
