@@ -72,7 +72,7 @@ const Header: React.FC = () => {
             <Link to="/white">
               <button className="flex items-center justify-center py-2 px-6 font-bold text-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-yellow-400 hover:text-red-900 transition-all duration-200">White</button>
             </Link>
-            <Link to "/">
+            <Link to="/">
               <button className="" >/</button>
             </Link>
 
