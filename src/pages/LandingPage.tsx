@@ -12,6 +12,7 @@ import { logPageView, logButtonClick } from '../services/analytics';
 import { useEffect } from 'react';
 import BgBurguer from '../assets/Bg-burguer.png';
 
+
 export default function LandingPage() {
   useEffect(() => {
     logPageView('/');

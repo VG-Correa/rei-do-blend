@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 // import LogoTransparente from '../assets/Logo com fundo transparente.png';
 
 const Header: React.FC = () => {
@@ -51,6 +52,12 @@ const Header: React.FC = () => {
           <button onClick={() => scrollToSection('processo')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Processo</button>
           {/* <button onClick={() => scrollToSection('depoimentos')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Depoimentos</button> */}
           <button onClick={() => scrollToSection('contato')} className="flex items-center justify-center py-2 px-6 font-bold text-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-yellow-400 hover:text-red-900 transition-all duration-200">Contato</button>
+          <Link to="/white">
+            <button className="flex items-center justify-center py-2 px-6 font-bold text-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-yellow-400 hover:text-red-900 transition-all duration-200">White</button>
+          </Link>
+          <Link to="/">
+            <button className="flex items-center justify-center py-2 px-6 font-bold text-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-yellow-400 hover:text-red-900 transition-all duration-200">/</button>
+          </Link>
         </nav>
 
         {/* Menu Mobile */}
@@ -62,6 +69,13 @@ const Header: React.FC = () => {
             <button onClick={() => scrollToSection('processo')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Processo</button>
             {/* <button onClick={() => scrollToSection('depoimentos')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Depoimentos</button> */}
             <button onClick={() => scrollToSection('contato')} className="flex items-center justify-center py-2 px-6 font-bold text-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-yellow-400 hover:text-red-900 transition-all duration-200">Contato</button>
+            <Link to="/white">
+              <button className="flex items-center justify-center py-2 px-6 font-bold text-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-yellow-400 hover:text-red-900 transition-all duration-200">White</button>
+            </Link>
+            <Link to "/">
+              <button className="" >/</button>
+            </Link>
+
           </nav>
         )}
       </div>
