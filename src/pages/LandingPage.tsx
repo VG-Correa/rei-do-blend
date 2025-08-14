@@ -10,6 +10,7 @@ import { Head } from '../components/SEO/Head';
 import { organizationSchema, localBusinessSchema } from '../schemas';
 import { logPageView, logButtonClick } from '../services/analytics';
 import { useEffect } from 'react';
+import BgBurguer from '../assets/Bg-burguer.png';
 
 export default function LandingPage() {
   useEffect(() => {
@@ -42,7 +43,7 @@ export default function LandingPage() {
           <div
             className="absolute inset-0 bg-center bg-cover"
             style={{
-              backgroundImage: 'url("./src/assets/Bg-burguer.png")'
+              backgroundImage: `url(${BgBurguer})`
             }}
           ></div>
 
