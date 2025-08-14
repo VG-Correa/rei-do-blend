@@ -3,7 +3,7 @@ import LogoTransparente from '../assets/Logo com fundo transparente.png';
 
 export const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-white pt-10 pb-6">
+    <footer className="bg-[#320000] text-white pt-10 pb-6">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
@@ -24,11 +24,11 @@ export const Footer = () => {
             <div className="space-y-4 text-gray-400">
               <p className="flex items-center gap-2">
                 <span>📍</span>
-                Av. Ouro Fino, 896 - Bosque dos Eucaliptos, São José dos Campos
+                Av. Ouro Fino, 896 - Bosque dos Eucaliptos, São José dos Campos / SP
               </p>
               <p className="flex items-center gap-2">
                 <span>📱</span>
-                (11) 9999-9999
+                (12) 98845-7268
               </p>
               <p className="flex items-center gap-2">
                 <span>📧</span>

@@ -1,27 +1,38 @@
 import React, { useState } from 'react';
-import LogoTransparente from '../assets/Logo com fundo transparente.png';
+// import LogoTransparente from '../assets/Logo com fundo transparente.png';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-    setIsOpen(false);
-  };
+  const element = document.getElementById(sectionId);
+  if (element) {
+    const headerOffset = 65; // altura do menu fixo em pixels
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    const offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+  setIsOpen(false);
+};
+
 
   return (
     <header className="bg-[#320000] fixed w-full top-0 left-0 z-50 shadow-xl border-b border-[#2a0000]">
-      <div className="container mx-auto flex justify-between items-center px-4 py-2 md:py-3">
-        <div className="flex items-center space-x-3">
-          <div className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full p-1.5 shadow-lg backdrop-blur-sm">
+      <div className="container mx-auto flex justify-center items-center px-4 py-2 md:py-3">
+        {/* <div className="flex items-center space-x-3"> */}
+          {/* <div className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full p-1.5 shadow-lg backdrop-blur-sm">
             <img 
               src={LogoTransparente} 
               alt="Rei do Blend Logo" 
               className="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.7)] drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]" 
             />
-          </div>
-          <span className="text-2xl font-extrabold text-white tracking-tight drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">Rei do Blend</span>
-        </div>
+          </div> */}
+          {/* <span className="text-2xl font-extrabold text-white tracking-tight drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">Rei do Blend</span> */}
+        {/* </div> */}
 
         {/* Botão hamburguer só em telas pequenas */}
         <button
@@ -38,7 +49,7 @@ const Header: React.FC = () => {
           <button onClick={() => scrollToSection('sobre')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Sobre</button>
           <button onClick={() => scrollToSection('produtos')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Produtos</button>
           <button onClick={() => scrollToSection('processo')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Processo</button>
-          <button onClick={() => scrollToSection('depoimentos')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Depoimentos</button>
+          {/* <button onClick={() => scrollToSection('depoimentos')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Depoimentos</button> */}
           <button onClick={() => scrollToSection('contato')} className="flex items-center justify-center py-2 px-6 font-bold text-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-yellow-400 hover:text-red-900 transition-all duration-200">Contato</button>
         </nav>
 
@@ -49,7 +60,7 @@ const Header: React.FC = () => {
             <button onClick={() => scrollToSection('sobre')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Sobre</button>
             <button onClick={() => scrollToSection('produtos')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Produtos</button>
             <button onClick={() => scrollToSection('processo')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Processo</button>
-            <button onClick={() => scrollToSection('depoimentos')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Depoimentos</button>
+            {/* <button onClick={() => scrollToSection('depoimentos')} className="flex items-center justify-center py-2 px-4 font-semibold text-yellow-400 hover:bg-yellow-400/10 rounded-lg transition-all duration-200">Depoimentos</button> */}
             <button onClick={() => scrollToSection('contato')} className="flex items-center justify-center py-2 px-6 font-bold text-yellow-400 border-2 border-yellow-400 rounded-full hover:bg-yellow-400 hover:text-red-900 transition-all duration-200">Contato</button>
           </nav>
         )}
