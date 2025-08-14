@@ -17,7 +17,7 @@ export const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white">Rei do Blend</h3>
-                <p className="text-gray-400 text-sm">Pai e Filho</p>
+                {/* <p className="text-gray-400 text-sm">Pai e Filho</p> */}
               </div>
             </div>
             
